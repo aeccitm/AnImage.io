@@ -2,11 +2,11 @@
 
 <div align="center"><b> AnIMAGE: A MATLAB-based tool for generating microstrip antennas with complex shapes.</b></div>
 
-##Brief Description of AnIMAGE
+#Brief Description of AnIMAGE
 
 AnIMAGE is a software tool developed on MATLAB, specifically designed to facilitate the design process of microstrip antennas with complex geometries. This software enables the creation of high-performance antennas with more design options, while its user-friendly interface simplifies the design process and streamlines design calculations, saving designers significant time and effort. Additionally, AnIMAGE allows for the exportation of complex geometries, providing the ability to simulate the electromagnetic behavior of these antennas in CST Studio. This software is particularly useful for designers looking to create antennas with complex geometries such as fractals or other structures derived from images, as it offers them innovative ways to design microstrip antennas.
 
-## System Requeriments
+# System Requeriments
 
 AnIMAGE is developed on MATLAB R2022b, thus its system requirements are identical to those of MATLAB. The following are the minimum system requirements for running AnIMAGE:
 
