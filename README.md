@@ -22,8 +22,6 @@ Sierra)
 - Graphics: A GPU with OpenGL 3.3 or later support is recommended for using the GPU
 acceleration feature.
 
-##LICENSE
-This code is licensed under GNU (GPL)
 To utilize the AnIMAGE GUI, it is crucial to download the CST_App folder from the repository, which includes necessary files that enable proper software functionality. These files include the Application Programming Interface (API) files that establish the connection between CST STUDIO Suite and MATLAB (extracted from https://github.com/hgiddenss/CST_App), as well as other files that enable users to access the AnIMAGE GUI from MATLAB
 
 Lastly, to conduct electromagnetic analyses on structures designed with AnIMAGE, it is necessary to install CST Studio software beforehand. Failure to install this software will result in the improper functioning of the MATLAB script “CST MicrowaveStudio.m. 
@@ -125,3 +123,5 @@ thickness is 35 µm by default.
 <div align="center"><img src="User'guide_images/Fig13.PNG"></div>
 <p align="center">Fig 13. The antenna is ready to be simulated in CST STUDIO, to know its electrical characteristics. </p>
 
+# LICENSE 
+This code is licensed under GNU (GPL)
