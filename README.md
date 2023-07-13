@@ -54,7 +54,9 @@ The user can import the image by selecting the "load image" button in the upper-
 
 **Step 4:** After navigating to the folder containing the image to be uploaded, the user must select it in .png format. To obtain a better fill in the construction of the figure, it is recommended to use a previously binarized or grayscale image.
 
-AnIMAGE provides the option to automatically binarize an image if the user does not already possess one. This signifies that the software will convert the image into a two-tone format so that it can be processed correctly. In fact, the user interface supports two distinct forms of image reconstruction, as illustrated in the following examples: 
+AnIMAGE provides the option to automatically binarize an image if the user does not already possess one. This signifies that the software will convert the image into a two-tone format so that it can be processed correctly.
+
+In fact, the user interface supports two distinct forms of image reconstruction, as illustrated in the following examples: 
 
 **Example: Reconstruction using previously binarized image**
 
