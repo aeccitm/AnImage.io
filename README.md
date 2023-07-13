@@ -60,10 +60,10 @@ In fact, the user interface supports two distinct forms of image reconstruction,
 
 **Example: Reconstruction using previously binarized image**
 
-**Step 1:** Once Figure A has been loaded, we have two options: Actual B&W or Inverted B&W. The primary distinction between these two options is the area that will be filled with copper. In fact, the white color indicates the cooper region, and the black color the substrate.
-
 <div align="center"><img src="User'guide_images/Fig4.PNG"></div>
 <p align="center">Fig 4. Selecting and loading the image. For instance, a butterfly’s image has been selected, due to its complex symmetrical shape.</p>
+
+**Step 1:** Once Figure A has been loaded, we have two options: Actual B&W or Inverted B&W. The primary distinction between these two options is the area that will be filled with copper. In fact, the white color indicates the cooper region, and the black color the substrate.
 
 **Option 1:** Actual B&W
 
@@ -73,7 +73,7 @@ In fact, the user interface supports two distinct forms of image reconstruction,
 **Option 2:** Inverted B&W
 
 <div align="center"><img src="User'guide_images/Fig6.PNG"></div>
-<p align="center">Fig 6.Select Inverted B&W option. The black color indicates the cooper region.</p>
+<p align="center">Fig 6. Select Inverted B&W option. The black color indicates the cooper region.</p>
 
 **Step 2:** Now, the parameter tab will be enabled. Then, the user can select the optimal parameters for reconstructing the image on a dielectric substrate. Options that can be configured include the following:
 
