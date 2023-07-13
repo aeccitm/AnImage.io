@@ -22,34 +22,37 @@ Sierra)
 - Graphics: A GPU with OpenGL 3.3 or later support is recommended for using the GPU
 acceleration feature.
 
-To utilize the AnIMAGE GUI, it is crucial to download the CST_App folder from the repository, which includes necessary files that enable proper software functionality. These files include the Application Programming Interface (API) files that establish the connection between CST STUDIO Suite and MATLAB (extracted from https://github.com/hgiddenss/CST_App), as well as other files that enable users to access the AnIMAGE GUI from MATLAB
+To run the AnImage GUI, it is essential to have the CST_App folder downloaded from the repository, it contains the necessary files that the software use to function properly. Between these, the Application Programming Interface (API) files that connect the CST STUDIO Suite with Matlab extracted via (https://github.com/hgiddenss/CST_App). In addition, as well as other files that enable the users to access in the AnImage GUI from Matlab.
 
-Lastly, to conduct electromagnetic analyses on structures designed with AnIMAGE, it is necessary to install CST Studio software beforehand. Failure to install this software will result in the improper functioning of the MATLAB script “CST MicrowaveStudio.m. 
-
-**Instructions**
-
-To use AnIMAGE software for generating microstrip antennas with complex structures, follow the instructions below:
+Finally, if you wish to perform an electromagnetic analysis on a structure designed with AnIMAGE, you must have previously installed the CST Studio software on your computer, if it is not installed, the Matlab script “CST MicrowaveStudio.m” will not run correctly Instructions: Instructions for installing the software and generating microstrip antennas with complex structures are provided below. 
 
 **Step 1:** Ensure that your computer has MATLAB R2022b and CST STUDIO Suite software installed. Open MATLAB and navigate to the folder containing the CST_MicrowaveStudio.m file. Run the file by selecting the "Run" button. This file facilitates the integration of CST STUDIO with MATLAB R2022b, enabling you to use all the features of the CST STUDIO software in MATLAB.
 
 <div align="center"><img src="User'guide_images/Fig1.PNG"></div>
 <p align="center">Fig 1. The display of the CST_MicrowaveStudio.m file.</p>
 
-**Step 2:** Open the AnIMAGE.m file, which contains the code describing the elements of the GUI, such as buttons, menus, text boxes, and axes. The code determines the software's functionality, so it is recommended not to make abrupt changes to the source code unless you have a good understanding of the implications. To execute the AnIMAGE.m file, click on the "run" button in the MATLAB environment. Note that AnIMAGE is configured by default to operate with .PNG images, but other image formats such as .JPG and .TIFF are also supported.
+**Step 2:** Open the **AnIMAGE.m** file. The **AnIMAGE.m** file contains the code that describes each element of the GUI, such as buttons, menus, text boxes and axes. This code is responsible for the functionality of the software, so it is important to avoid making abrupt changes to the source code unless you have a good understanding of the implications of those changes.
 
-**Warning:** The proposed software was configured by default to operate with .PNG images. However, additional image formats such as .JPG, .TIFF among others are supported, if they are not encrypted. As depicted in Figure 2, it could be selected at line 100 of the source code.
+To execute the **AnIMAGE.m** file, simply click on the "run" button in the Matlab environment. 
+
+Note: The proposed software was configured by default to operate with .PNG images. However,
+additional image formats such as .JPG, .TIFF among others are supported, if they are not encrypted.
+As depicted in Figure 2, it could be selected at line 100 of the source code. 
+
 
 <div align="center"><img src="User'guide_images/Fig2.PNG"></div>
 <p align="center">Fig 2. The display of the AnIMAGE.m file.</p>
 
-**Step 3:** After running the code in the AnIMAGE.m file, the AnIMAGE GUI will appear. All elements of the GUI will be disabled until the desired image is loaded. To import an image, select the "load image" button in the upper-left corner of the interface and navigate to the folder containing the image. AnIMAGE supports .png, .jpg, .tiff, and other unencrypted image formats. It is recommended to use a previously binarized or grayscale image for better results.
+**Step 3:** After executing the code contained in the file, the AnIMAGE GUI will start, which you can then use to analyze and process your images. All elements of the GUI will be disabled by default until the desired image to be used is loaded. 
 
 The user can import the image by selecting the "load image" button in the upper-left corner of the user interface, as shown in Figure 3.
 
-**Step 4:** Once the desired image is selected, the user can use the software to process and analyze the image. AnIMAGE provides an option to automatically binarize an image if the user does not have one. This converts the image into a two-tone format for correct processing. The user interface supports two distinct forms of image reconstruction. Examples of these forms are illustrated in the following examples:
-
 <div align="center"><img src="User'guide_images/Fig3.PNG"></div>
 <p align="center">Fig 3. User interface of AnIMAGE. The red box highlights the position of the load image button.</p>
+
+**Step 4:** After navigating to the folder containing the image to be uploaded, the user must select it in .png format. To obtain a better fill in the construction of the figure, it is recommended to use a previously binarized or grayscale image.
+
+AnIMAGE provides the option to automatically binarize an image if the user does not already possess one. This signifies that the software will convert the image into a two-tone format so that it can be processed correctly. In fact, the user interface supports two distinct forms of image reconstruction, as illustrated in the following examples: 
 
 **Example: Reconstruction using previously binarized image**
 
@@ -76,14 +79,21 @@ The user can import the image by selecting the "load image" button in the upper-
 
 - **c. Image Scale:** This parameter allows adjusting the size of the image so that it is proportional to the substrate. In this example, we will use a scaling factor of 1.5 as illustrated in Figure 7.
 
-- **d.** After entering the parameters, pick the **Graph** button.
+- **d.** **Substrate thickness:** This parameter is a crucial factor that affects the antenna's response. By adjusting the thickness of the substrate, the antenna's performance can be optimized in terms of various parameters such as gain, bandwidth, and radiation pattern. In this example,
+a thickness of 1.6 mm was typed into the box
 
-- **e.** In the box to the right, the image will appear as shown, with the blue area representing the copper, the white portion representing the substrate, and the axis showing the dimensions of the substrate (in this case, 30mm x 30 mm).
+- **e.** Dielectric constant: The dielectric constant is another crucial parameter for antenna simulation. It represents a material's ability to store electric energy and is a dimension lessnumber representing the ratio of the permittivity of a material relative to that of a vacuum. In this example, the dielectric constant of the FR-4 was entered in the box, i.e, a dielectric constant equal to 4.3.
+
+- **f.** **Cooper thickness:** The thickness of the copper layer on the printed circuit board (PCB) affects the antenna's performance in terms of its radiation pattern, transmission efficiency, and attenuation of a transmission line. In this example, we have chosen a copper thickness of 0.035 mm.
+  
+- **g.** After entering the parameters, pick the **Graph** button.
+
+- **h.** In the box to the right, the image will appear as shown, with the blue area representing the copper, the white portion representing the substrate, and the axis showing the dimensions of the substrate (in this case, 30mm x 30 mm).
 
 <div align="center"><img src="User'guide_images/Fig7.PNG"></div>
 <p align="center">Fig 7. Input of substrate parameters and showing of the reconstructed image based on the entered parameters.</p>
 
-Figure 8 illustrates how the reconstruction alters when the image scale is increased to 5, while all other parameters remain unchanged. The butterfly image now exceeds the size of the defined substrate, as shown in Figure 8. It is essential to clarify that this could be exported to the CST STUDIO software in the same manner without issue.
+Figure 8 shows how the reconstruction changes when the image scale is increased to 5, while all other parameters remain fixed. As illustrated in Figure 8, the butterfly picture now exceeds the size of the defined substrate. It is critical to emphasize that this could be exported to the CST STUDIO program without difficulty.
 
 <div align="center"><img src="User'guide_images/Fig8.PNG"></div>
 <p align="center">Fig 8.  Variation of the image scale from 1.5 to 5, while the other parameters remain unchanged.</p>
@@ -105,15 +115,12 @@ Figure 8 illustrates how the reconstruction alters when the image scale is incre
 <div align="center"><img src="User'guide_images/Fig11.PNG"></div>
 <p align="center">Fig 11. Reconstruction of the figure in CST Studio based on the chosen parameters.</p>
 
-**Step 6:** Once the image is complete, the pixels will be automatically joined to reconstruct the figure. The following components are identifiable in Figure 12.
+**Step 6:** When the image is finished, the pixels are connected to recreate the figure. Figure 12 identifies the following components
 
-- **a. Substrate.** The system is constructed with a FR-4 substrate by default; however, this can be changed in CST STUDIO. The white color indicates the presence of the substrate,
-and its thickness is 1.6 mm by default also.
-- **b. Radiant patch (Copper).** The yellow color indicates the presence of the cooper layer.
-The thickness is 35 µm by default.
+- **a. Substrate.** The white color indicates the presence of the substrate, and its thickness and dielectric permittivity will be the specified in step 2. Here, it is important to remember that the user can modify the dielectric constant and the thickness of the substrate in CST STUDIO also.
+- **b. Radiant patch (Copper).** The yellow color indicates the presence of the cooper layer. The thickness will be the specified in step 2. 
 - **c. Aggregated Coaxial feed.** (optional).
-- **d. Ground (Copper).** The yellow color indicates the presence of the cooper layer. The
-thickness is 35 µm by default.
+- **d. Ground (Copper).** The yellow color indicates the presence of the cooper layer. The thickness will be the specified in step 2.
 
 <div align="center"><img src="User'guide_images/Fig12.PNG"></div>
 <p align="center">Fig 12. Antenna built in CST. The different components of the designed antenna are shown here. </p>
