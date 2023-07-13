@@ -28,7 +28,7 @@ Finally, if you wish to perform an electromagnetic analysis on a structure desig
 
 Instructions for installing the software and generating microstrip antennas with complex structures are provided below. 
 
-**Step 1:** Ensure that your computer has MATLAB R2022b and CST STUDIO Suite software installed. Open MATLAB and navigate to the folder containing the CST_MicrowaveStudio.m file. Run the file by selecting the "Run" button. This file facilitates the integration of CST STUDIO with MATLAB R2022b, enabling you to use all the features of the CST STUDIO software in MATLAB.
+**Step 1:**  Ensure that Matlab and CST STUDIO have been installed on your computer. Then, open Matlab and go to the directory where is contained the downloaded **CST_MicrowaveStudio.m** file. Once you have located the file and opened it, select the “Run” button to execute it. The **CST_MicrowaveStudio.m** file is intended to facilitate the integration of CST STUDIO with Matlab R2022b. By executing this file, you can utilize all the CST STUDIO software's features within Matlab. 
 
 <div align="center"><img src="User'guide_images/Fig1.PNG"></div>
 <p align="center">Fig 1. The display of the CST_MicrowaveStudio.m file.</p>
