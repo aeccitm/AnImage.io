@@ -24,7 +24,9 @@ acceleration feature.
 
 To run the AnImage GUI, it is essential to have the CST_App folder downloaded from the repository, it contains the necessary files that the software use to function properly. Between these, the Application Programming Interface (API) files that connect the CST STUDIO Suite with Matlab extracted via (https://github.com/hgiddenss/CST_App). In addition, as well as other files that enable the users to access in the AnImage GUI from Matlab.
 
-Finally, if you wish to perform an electromagnetic analysis on a structure designed with AnIMAGE, you must have previously installed the CST Studio software on your computer, if it is not installed, the Matlab script “CST MicrowaveStudio.m” will not run correctly Instructions: Instructions for installing the software and generating microstrip antennas with complex structures are provided below. 
+Finally, if you wish to perform an electromagnetic analysis on a structure designed with AnIMAGE, you must have previously installed the CST Studio software on your computer, if it is not installed, the Matlab script “CST MicrowaveStudio.m” will not run correctly **Instructions:** 
+
+Instructions for installing the software and generating microstrip antennas with complex structures are provided below. 
 
 **Step 1:** Ensure that your computer has MATLAB R2022b and CST STUDIO Suite software installed. Open MATLAB and navigate to the folder containing the CST_MicrowaveStudio.m file. Run the file by selecting the "Run" button. This file facilitates the integration of CST STUDIO with MATLAB R2022b, enabling you to use all the features of the CST STUDIO software in MATLAB.
 
